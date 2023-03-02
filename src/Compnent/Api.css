@@ -1,0 +1,132 @@
+/* .main-con{
+    display: flex;
+    flex-direction: column;
+    margin:20px;
+    box-shadow: 2px 2px 10px royalblue;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: rgb(231, 224, 219);
+} */
+
+.container-card{
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    gap: 15px;
+    margin: 1rem;
+}
+/* 
+.main-con .more{
+    color:white;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    width: 112px;
+    height: 30px;
+    padding: 0px 4px 10px 3px;
+    margin: 1px 110px;
+    border-radius: 20px;
+    background-color: rgb(48, 38, 38);
+    /* background-color: rgb(10, 108, 108); */
+
+/* }
+.main-con .more:hover{
+    color:darkblue;
+}
+*/
+
+
+
+.con{
+    display: flex;
+    justify-content: center;
+}
+.card{
+    display: flex;
+    flex-direction: column  ;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 1rem purple;
+    
+    
+}
+.card-img{
+   
+    margin-bottom: 15px;
+    object-fit:contain;
+    display: flex;
+    justify-content: center;
+    width: max-content;
+    border-radius: 0.3rem ;
+
+}
+
+.card h2{
+    padding: 10px;
+}
+
+.card p{
+    padding: 10px;
+}
+.card a{
+    background-color: rgb(24, 23, 23);
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    margin: 25px 60px;
+    text-decoration: none;
+    border-radius: 20px;
+    
+}
+.card a:hover{
+    color: black;
+    background-color:gray;
+}
+
+.card:hover p{
+    color: black;
+
+}
+
+.card:hover{
+    background-color: rgb(165, 248, 220);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all 1s ease;
+    
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    .container-card{
+        display: grid;
+        grid-template-columns: 100%;
+        width: auto;
+    }
+   
+  }
+  @media screen and (min-width:800px) {
+    .container-card{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        width: auto;
+        /* margin-right: 2rem; */
+    }
+  
+  } 
+
+  @media screen and (min-width:1000px) {
+    .container-card{
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        width: auto;
+
+    }
+    .card-img{
+        object-fit: contain;
+    }
+  
+  } 
